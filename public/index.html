@@ -4,50 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Server</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto">
-        <h1 class="text-center">Simple Server</h1>
-        <h2 class="text-center mb-3 font-medium text-blue-300">A Light Weighted Server System</h2>
-        
-        <div class="max-w-md mx-auto">
-            <div class="card mb-4">
-                <h2 class="mb-2">Upload File</h2>
-                <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm" class="flex flex-col gap-2">
-                    <input type="file" name="file" id="fileInput" required class="py-2"/>
-                    <button type="submit" class="btn btn-primary">Upload File</button>
-                </form>
-                <div id="progressContainer" class="progress-container" style="display: none;">
-                    <div id="progressBar" class="progress-bar"></div>
-                    <span id="progressText" class="text-sm"></span>
-                </div>
-            </div>
-            
-            <div class="card mb-4">
-                <h2 class="mb-2">Drive</h2>
-                <div class="file-row">
-                    <img src="/icons/icons8-folder-48.png" class="icons">
-                    <a href="/files" class="btn">Browse Files Here</a>
-                </div>
-            </div>
-            
-            <div class="card mb-4">
-                <blockquote>
-                    This is the main page of Simple Server.
-                </blockquote>
-            </div>
-            
-            <div class="text-center mb-4">
-                <img src="avatar.jpeg" id="avatar-img" class="avatar"/>
-            </div>
-            
-            <div class="text-center text-sm mb-4">
-                <p>Developed by <a href="https://github.com/lihaozhe013/simple-NAS-nodejs" target="_blank">lihaozhe013</a></p>
-            </div>
-        </div>
-    </div>
-    
-    <script src="/dist/upload.js"></script>
+    <div id="root"></div>
+    <script src="/dist/main-page.js"></script>
 </body>
 </html>

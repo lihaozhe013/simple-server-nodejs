@@ -6,6 +6,8 @@ module.exports = {
     'markdown-viewer/bundle': './src/MarkdownViewer.tsx',
     'file-browser/file-browser': './src/frontend/file-browser.ts',
     'upload': './src/frontend/upload.ts',
+    'main-page': './src/main-page.tsx',
+    'file-browser-react': './src/file-browser.tsx',
   },
   output: {
     filename: '[name].js',
